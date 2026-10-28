@@ -1,0 +1,19 @@
+Part 1: My solution is very similar to Paul's. The main difference
+is that the official implicit-self step already adds the empty parentheses, so it
+ends up identical to the implicit-parens step. Mine saves the parentheses for the
+next step, so each step removes exactly one kind of sugar. The official operators
+step also wraps the first string in parentheses, which makes the
+((a + b) + c) + d structure easier to see.
+
+Part 2: All three loopless methods use the same approach as the official solution.
+The only differences are in spacing. The official alternative for
+build_credits uses sort_by with find_index. I'd avoided that approach because
+sort_by isn't guaranteed to be stable, but when I tested it, it matched the
+original on every case. Still, flat_map seems more direct to me. The biggest
+takeaway was seeing how each loop pattern maps onto select, map, or flat_map.
+
+Part 3: I enjoyed this part overall!
+
+Reflection: Found that if you click "do your reflection" at the bottom of the Part 3 tab, you can access the reflection,
+but if you try clicking it from the main Ruby Adventures tab where it says Last up: Do a small reflection, the requested URL
+is not found.
