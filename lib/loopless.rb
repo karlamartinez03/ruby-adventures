@@ -20,14 +20,10 @@ module GoingLoopless
   # multiple roles in the film.
   #
   def build_credits(movie, role_order)
-    results = []
-    role_order.each do |role_name|
-      movie.roles.each do |role|
-        if role.name == role_name
-          results << "#{role.person.name} (#{role.name})"
-        end
-      end
+    role_order.flat_map do |role_name|
+        movie.roles
+          .select { |role| role.name == role_name }
+          .map { |role| "#{role.person.name} (#{role.name})" }
+     end
     end
-    results
-  end
 end
