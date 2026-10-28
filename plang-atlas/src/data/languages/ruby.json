@@ -1,6 +1,7 @@
 {
   "name": "Ruby",
   "tags": ["oop", "dyn_type"],
+  "authors": "Main author is Yukihiro Matsumoto.",
   "links": [
     {
       "title": "Official home page",

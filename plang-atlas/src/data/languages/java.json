@@ -1,6 +1,7 @@
 {
   "name": "Java",
   "tags": ["oop", "static_type"],
+  "authors": "Main author is James Gosling.",
   "links": [
     {
       "title": "Oracle implementation",

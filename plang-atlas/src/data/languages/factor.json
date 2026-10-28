@@ -1,0 +1,19 @@
+{
+  "name": "Factor",
+  "tags": ["concatenative", "dyn_type"],
+  "authors": "Main author is Slava Pestov.",
+  "links": [
+    {
+      "title": "Factor Code",
+      "url": "https://factorcode.org/"
+    },
+    {
+      "title": "Factor Concatenative ",
+      "url": "https://concatenative.org/wiki/view/Factor"
+    },
+    {
+      "title": "Planet Factor Community Blogs",
+      "url": "https://planet.factorcode.org/"
+    }
+  ]
+}

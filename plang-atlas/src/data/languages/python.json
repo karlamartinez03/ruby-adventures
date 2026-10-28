@@ -1,6 +1,7 @@
 {
   "name": "Python",
   "tags": ["oop", "dyn_type"],
+  "authors": "Main author is Guido van Rossum.",
   "links": [
     {
       "title": "Official home page",
