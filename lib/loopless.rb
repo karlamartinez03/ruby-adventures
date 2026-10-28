@@ -12,19 +12,7 @@ module GoingLoopless
   # chronological order.
   #
   def list_movies(person)
-    movies = []
-    person.roles.each do |role|
-      unless movies.include?(role.movie)
-        movies << role.movie
-      end
-    end
-    movies.sort_by!(&:year)  #  (&:year) is shorthand for { |o| o.year }
-
-    results = []
-    movies.each do |movie|
-      results << "#{movie.title} (#{movie.year})"
-    end
-    results
+    person.roles.map(&:movie).uniq.sort_by(&:year).map { |movie| "#{movie.title} (#{movie.year})" }
   end
 
   # Creates a list of credits entry of the form "Person Name (role)", with the roles appearing in
